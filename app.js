@@ -203,8 +203,84 @@
 
 
 
+// // chp 43-48
+
+// // task1
+
+// function greet(){
+//     alert('hello world')
+// }
 
 
+// // task2
+
+// function thanks(){
+//     alert("Thanks for purchasing a phone from us");
+// }
+
+
+// // task3
+
+
+// function deleteRow1(){
+//       document.getElementById('row1').remove();
+//     }
+// function deleteRow2(){
+//     document.getElementById('row2').remove();
+//  }
+//  function deleteRow3(){
+//     document.getElementById('row3').remove();
+//  }
+//  function deleteRow4(){
+//     document.getElementById('row4').remove();
+//  }
+//  function deleteRow5(){
+//     document.getElementById('row5').remove();
+//  }
+//  function deleteRow6(){
+//     var row = document.getElementById('row6')
+//     row.parentElement.removeChild(row);
+//  }
+//  function deleteRow7(){
+//     var row = document.getElementById('row7')
+//     row.parentElement.removeChild(row);
+//  }
+//  function deleteRow8(){
+//     var row = document.getElementById('row8')
+//     row.parentElement.removeChild(row);
+//  }
+//  function deleteRow9(){
+//     var row = document.getElementById('row9')
+//     row.parentElement.removeChild(row);
+//  }
+//  function deleteRow10(){
+//     var row = document.getElementById('row10')
+//     row.parentElement.removeChild(row);
+//  }
+
+
+// // task4
+
+// //done in index.html
+
+
+
+
+// // task5
+
+// var counter = 0;
+
+// var val = document.getElementById('count')
+// val.value = counter;
+
+// function increase(){
+//     val.value = ++counter;
+// }
+
+
+// function decrease(){
+//     val.value = --counter;
+// }
 
 
 
