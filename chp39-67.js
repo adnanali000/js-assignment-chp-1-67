@@ -322,41 +322,90 @@
 // }
 
 
-// task3
+// // task3
 
-function AddData(){
-    var x = document.getElementById('age').value;
-    var y = document.getElementById('name').value;
-    var letters = '/^[a-zA-Z]+$/';
+// function AddData(){
+//     var x = document.getElementById('age').value;
+//     var y = document.getElementById('name').value;
+//     var letters = '/^[a-zA-Z]+$/';
 
-    if((parseInt(x) != (x)) && (y == parseInt(y))){
+//     if((parseInt(x) != (x)) && (y == parseInt(y))){
 
-        alert("Wrong Input");
+//         alert("Wrong Input");
 
-    }else{
-        var rows = "";
-        var name = document.getElementById('name').value;
-        var age = document.getElementById('age').value;
-        var country = document.getElementById('country').value;
+//     }else{
+//         var rows = "";
+//         var name = document.getElementById('name').value;
+//         var age = document.getElementById('age').value;
+//         var country = document.getElementById('country').value;
 
-        rows += "<tr><td>" + name + "</td><td>" + age + "</td><td>" + country + "</td><td><button onclick = 'del()'>Delete</button></td><td><button onclick='edit()'>Edit</button></td></tr>";
-        var tbody = document.querySelector("#list tbody");
-        var tr = document.createElement("tr");
-        tr.innerHTML = rows;
-        tbody.appendChild(tr);
-    }
-}
+//         rows += "<tr><td>" + name + "</td><td>" + age + "</td><td>" + country + "</td><td><button onclick = 'del()'>Delete</button></td><td><button onclick='edit()'>Edit</button></td></tr>";
+//         var tbody = document.querySelector("#list tbody");
+//         var tr = document.createElement("tr");
+//         tr.innerHTML = rows;
+//         tbody.appendChild(tr);
+//     }
+// }
 
-function ResetForm(){
-    document.getElementById('student').reset();
-}
+// function ResetForm(){
+//     document.getElementById('student').reset();
+// }
 
-function del(){
-          var td = event.target.parentNode;
-          var tr = td.parentNode;
-          tr.parentNode.removeChild(tr);
-}
-
-
+// function del(){
+//           var td = event.target.parentNode;
+//           var tr = td.parentNode;
+//           tr.parentNode.removeChild(tr);
+// }
 
 
+
+// //chapter 58-67
+
+// // task1
+
+// //1
+// var main = document.getElementById("main-content");
+// //2
+// var child = main.childNodes;
+// console.log(child);
+// //3
+// var ren = main.getElementsByClassName("render");
+// for(var i = 0; i < ren.length; i++){
+//     console.log(ren[i].innerHTML)
+// }
+// //4
+// var name = document.getElementById("firstName").value = "ALex";
+// //5
+// var lname = document.getElementById("lastname").value = "Bank";
+// var email = document.getElementById("email").value = "alexbank@example.com";
+
+
+//task2
+
+//1
+var x = document.getElementById("form-content");
+console.log(x.nodeType);
+//2
+var y = document.getElementById("lastname");
+console.log(y.nodeType)
+console.log(y.childNodes.nodeType)
+//3
+var z = document.getElementById("lname");
+console.log(z.childNodes)
+z.innerHTML = "Last Name: Hales"
+console.log(z.innerHTML)
+//4
+var fchild = document.getElementById("main-content").firstChild.innerHTML;
+console.log(fchild);
+var lchild = document.getElementById("main-content").lastChild.innerHTML;
+console.log(lchild);
+//5
+var pSib = document.getElementById("lname").previousSibling.innerHTML;
+console.log(pSib);
+var nSib = document.getElementById("lname").nextSibling.innerHTML;
+console.log(nSib);
+//6
+var email = document.getElementById("email").parentNode;
+console.log(email)
+var mail = document.getElementById("email").nodeType;
+console.log(mail)
