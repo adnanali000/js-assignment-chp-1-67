@@ -283,6 +283,79 @@
 // }
 
 
+// // chapter 49-52
+
+// // task1
+
+// var naam = document.getElementById('name');
+// var lName = document.getElementById('lname');
+// var agee = document.getElementById('age');
+
+// function sub(){
+
+//     var x = naam.value;
+//     document.write("First Name: "+x+"<br>");
+//     var y = lName.value;
+//     document.write("Last Name: "+y+"<br>");
+//     var z = agee.value;
+//     document.write("Age: "+z+"<br>");
+// }
+
+
+// // task2
+
+// function read(){
+//     var dot = document.getElementById("dots");
+//     var moreText = document.getElementById("more");
+//     var textbtn = document.getElementById("mybtn");
+
+//     if(dot.style.display==="none"){
+//         dot.style.display = "inline";
+//         textbtn.innerHTML = "Read More";
+//         moreText.style.display = "none";
+//     }
+//     else{
+//         dot.style.display = "none";
+//         textbtn.innerHTML = "Read less";
+//         moreText.style.display = "inline";
+//     }
+// }
+
+
+// task3
+
+function AddData(){
+    var x = document.getElementById('age').value;
+    var y = document.getElementById('name').value;
+    var letters = '/^[a-zA-Z]+$/';
+
+    if((parseInt(x) != (x)) && (y == parseInt(y))){
+
+        alert("Wrong Input");
+
+    }else{
+        var rows = "";
+        var name = document.getElementById('name').value;
+        var age = document.getElementById('age').value;
+        var country = document.getElementById('country').value;
+
+        rows += "<tr><td>" + name + "</td><td>" + age + "</td><td>" + country + "</td><td><button onclick = 'del()'>Delete</button></td><td><button onclick='edit()'>Edit</button></td></tr>";
+        var tbody = document.querySelector("#list tbody");
+        var tr = document.createElement("tr");
+        tr.innerHTML = rows;
+        tbody.appendChild(tr);
+    }
+}
+
+function ResetForm(){
+    document.getElementById('student').reset();
+}
+
+function del(){
+          var td = event.target.parentNode;
+          var tr = td.parentNode;
+          tr.parentNode.removeChild(tr);
+}
 
 
 
